@@ -1,4 +1,4 @@
-﻿Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power of Two\n4.Harmonic Number\n5.Prime Factor\n6.Dividatio\n");
+﻿Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power of Two\n4.Harmonic Number\n5.Prime Factor\n6.Dividatio\n7.Swapping\n");
 Console.WriteLine("Enter Your Choice:");
 int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -27,5 +27,9 @@ switch (choice)
     case 6:
         FunctionalProgram.ReminderQuotient cal = new FunctionalProgram.ReminderQuotient();
         cal.calculate();
+        break;
+    case 7:
+        FunctionalProgram.Swap swap = new FunctionalProgram.Swap();
+        swap.change();
         break;
 }
