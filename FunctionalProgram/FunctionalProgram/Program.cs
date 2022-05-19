@@ -1,4 +1,4 @@
-﻿Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power of Two\n4.Harmonic Number\n5.Prime Factor\n6.Dividatio\n7.Swapping\n8.Even Odd\n9.Vowel Consonant\n");
+﻿Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power of Two\n4.Harmonic Number\n5.Prime Factor\n6.Dividatio\n7.Swapping\n8.Even Odd\n9.Vowel Consonant\n10.Largest no.\n");
 Console.WriteLine("Enter Your Choice:");
 int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -39,5 +39,12 @@ switch (choice)
     case 9:
         FunctionalProgram.Alphabet alphabet = new FunctionalProgram.Alphabet();
         alphabet.Vowel();
+        break;
+    case 10:
+        FunctionalProgram.Largest largest = new FunctionalProgram.Largest();
+        largest.large();
+        break;
+    default:
+        Console.WriteLine("Enter valid Option.");
         break;
 }
